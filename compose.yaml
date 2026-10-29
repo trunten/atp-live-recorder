@@ -1,0 +1,9 @@
+services:
+  recorder:
+    build: .
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 60s
+    volumes:
+      - ./recordings:/recordings
+    command: ["watch", "--out-dir", "/recordings"]
