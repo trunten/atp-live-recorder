@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Record ATP livestreams to local MP3 files. No cloud accounts required."""
+"""Record ATP livestreams to local MP3 files."""
 from __future__ import annotations
 
 import argparse
